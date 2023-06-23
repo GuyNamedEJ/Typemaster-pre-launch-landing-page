@@ -47,6 +47,25 @@ header{
 .btn-grey{
     color: var(--navy);
     background-color: var(--grey);
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.btn-orange{
+    color: var(--white);
+    background-color: var(--orange);
+    transition: background-color ease-in-out 0.3s;
+}
+
+.btn-grey:hover{
+    background-color: var(--navy);
+    color: white;
+    cursor: pointer;
+}
+
+.btn-orange:hover{
+    background-color: var(--lightOrange);
+    cursor: pointer;
 }
 
 .hero-title{
@@ -75,10 +94,7 @@ header{
     margin-bottom: 64px;
 }
 
-.btn-orange{
-    color: var(--white);
-    background-color: var(--orange);
-}
+
 
 .hero-img{
     width:372px;
@@ -242,5 +258,102 @@ header{
         text-align: left;
         align-items: start;
     }
+
+    .hero-pattern{
+        display: none;
+    }
     
+}
+
+
+@media screen and (min-width:1440px){
+    main{
+        max-width: 1440px;
+        margin: 0 auto;
+        padding:55px 165px;
+    }
+
+    .hero{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .hero-img{
+        width: 540px;
+        position: static;
+    }
+
+    .pattern{
+        display: block;
+        position: absolute;
+    }
+
+    .hero > .pattern{
+        top:0;
+        right:-25%;
+    }
+
+    .mechanical > .pattern{
+        bottom:0;
+        left:-25%;
+    }
+
+
+    .hero-content{
+        width: 445px;
+    }
+
+    .img-container{
+        margin-bottom: 0;
+    }
+
+    
+    .mechanical{
+        display: flex;
+        gap:125px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 168px;
+    }
+
+    .mechanical-content{
+        flex-direction: column;
+        align-items: start;
+        gap:27px;
+        width: 255px;
+        margin-bottom: 0;
+    }
+
+    .image-glass-and-keyboard{
+        width:445px;
+        height: 480px;
+    }
+
+    .image-phone-and-keyboard{
+        width: 255px;
+    }
+
+    .features{
+        align-items: flex-start;
+        justify-content: start;
+        gap:30px;
+    }
+    .feature{
+        width:255px;
+    }
+    
+    .feature-content{
+        width:255px;
+    }
+    
+    .feature > .text{
+        width:255px;
+    }
+
+    .feature-title{
+        font-size: 24px;
+    }
 }
