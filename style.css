@@ -152,6 +152,10 @@ header{
     width: 255px;
 }
 
+.pattern{
+    display: none;
+}
+
 .features{
     display:flex;
     flex-direction: column;
@@ -259,9 +263,7 @@ header{
         align-items: start;
     }
 
-    .hero-pattern{
-        display: none;
-    }
+   
     
 }
 
