@@ -82,6 +82,9 @@ header{
 
 .hero-img{
     width:372px;
+    border-radius: 16px;
+    position: relative;
+    left:10%;
 }
 
 .hero{
@@ -93,7 +96,7 @@ header{
 }
 
 .img-container{
-    position: relative;
+   position: relative;
    display: flex;
    gap:24px;
    left: -45px;
@@ -102,7 +105,7 @@ header{
 
 .image-phone-and-keyboard{
     width: 129px;
-    border-radius: 8px;
+    border-radius: 8px;   
 }
 
 .image-glass-and-keyboard{
@@ -114,7 +117,7 @@ header{
    text-align: center;
 }
 
-.content{
+.mechanical-content{
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -168,6 +171,7 @@ header{
     justify-content: center;
     background-color: var(--orange);
     width:65px;
+    height: 65px;
     padding:20px;
     border-radius: 16px;
 }
@@ -181,4 +185,62 @@ header{
 .footer span{
     font-weight: 700;
     margin-right: 3px;
+}
+
+@media screen and (min-width:768px) {
+    main{
+        padding:40px;
+    }
+    
+    .hero{
+        display:flex;
+        margin-bottom: 40px;
+    }
+
+    .mechanical-content > .text{
+        margin-bottom: 0;
+    }
+
+    .mechanical-content{
+        flex-direction: row;
+        align-items: center;
+        gap:92px;
+        text-align: left;
+        margin-bottom: 142px;
+    }
+
+    .img-container{
+        position: static;
+    }
+
+    .image-phone-and-keyboard{
+        width: 214px;
+    }
+
+    .image-glass-and-keyboard{
+        width: 445px;
+        height: 320px;
+    }
+
+    .features{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0;
+        flex-wrap: wrap;
+        margin-bottom: 70px;
+    }
+
+    .feature{
+        align-items: start;
+        margin-bottom: 72px;
+        width: 339px;
+    }
+
+    .feature-content{
+        width: 281px;
+        text-align: left;
+        align-items: start;
+    }
+    
 }
