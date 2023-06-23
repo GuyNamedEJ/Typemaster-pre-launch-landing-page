@@ -280,6 +280,10 @@ header{
         position: relative;
     }
 
+    .hero-content > .text{
+        font-size: 18px;
+    }
+
     .hero-img{
         width: 540px;
         position: static;
